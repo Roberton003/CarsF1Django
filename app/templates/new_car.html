@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Adicionar Novo Carro</h2>
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <table>
+
+         {{ form.as_p }}
+
+    </table>
+   
+
+    <input type="submit" value="Adicionar Carro" class="btn btn-primary">
+  </form>
+{% endblock %}
