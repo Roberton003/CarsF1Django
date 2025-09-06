@@ -1,6 +1,6 @@
 # Projeto carrosF1
 
-Este é um projeto Django para cadastro e gerenciamento de carros de Fórmula 1.
+E de Fórmula 1.
 
 ## Tecnologias Utilizadas
 - Python 3
