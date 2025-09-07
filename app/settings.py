@@ -11,10 +11,16 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 import os
 from pathlib import Path
-
+import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+env = environ.Env()
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
+# Gemini API Key
+GEMINI_API_KEY = env('GEMINI_API_KEY', default='CHAVE_NAO_ENCONTRADA')
 
 
 # Quick-start development settings - unsuitable for production
