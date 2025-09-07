@@ -83,6 +83,7 @@ Para garantir a qualidade e a segurança, todo novo código será gerado seguind
 ## 7. Padrões de Desenvolvimento
 
 -   **Documentação Oficial do Django**: Todo o código e arquitetura desenvolvidos devem seguir estritamente as convenções e melhores práticas descritas na [documentação oficial do Django](https://docs.djangoproject.com/en/5.2/), utilizando a versão 5.2 ou superior como referência.
+-   **Filosofias de Design**: É fundamental que o desenvolvimento também siga as **[Filosofias de Design do Django](https://docs.djangoproject.com/en/5.2/misc/design-philosophies/)**, que guiam as decisões de arquitetura e o "jeito Django" de resolver problemas.
 
 ## 8. Diretrizes de Engenharia e Qualidade
 
