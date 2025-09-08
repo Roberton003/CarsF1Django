@@ -18,7 +18,7 @@ def generate_car_bio(car: Car) -> str:
         return "Serviço de IA indisponível. Chave não configurada."
 
     # Define o modelo a ser usado
-    model = genai.GenerativeModel('models/gemini-2.5-flash-lite')
+    model = genai.GenerativeModel('models/gemini-2.0-flash')
 
     # Cria o prompt para a IA
     prompt = f"Crie uma descrição de marketing curta e empolgante, em um parágrafo, para um carro da marca {car.brand.name}, modelo {car.model}, fabricado em {car.factory_year}. Foque em um tom que atraia colecionadores e entusiastas de carros contendo no máx 251 caracteres."

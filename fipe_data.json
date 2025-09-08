@@ -1,0 +1,55 @@
+{
+    "brands": [
+        {
+            "name": "Fiat",
+            "code": "21",
+            "models": [
+                {"name": "Strada", "code": "600"},
+                {"name": "Argo", "code": "11401"},
+                {"name": "Mobi", "code": "7825"},
+                {"name": "Fastback", "code": "10754"},
+                {"name": "Pulse", "code": "11509"}
+            ]
+        },
+        {
+            "name": "Volkswagen",
+            "code": "59",
+            "models": [
+                {"name": "Polo", "code": "5426"},
+                {"name": "T-Cross", "code": "9372"},
+                {"name": "Nivus", "code": "10139"},
+                {"name": "Saveiro", "code": "55 Saveiro"},
+                {"name": "Taos", "code": "10140"}
+            ]
+        },
+        {
+            "name": "Chevrolet",
+            "code": "13",
+            "models": [
+                {"name": "Onix", "code": "5849"},
+                {"name": "Onix Plus", "code": "9373"},
+                {"name": "Tracker", "code": "5851"},
+                {"name": "Montana", "code": "5850"},
+                {"name": "S10", "code": "5852"}
+            ]
+        },
+        {
+            "name": "Hyundai",
+            "code": "26",
+            "models": [
+                {"name": "Creta", "code": "7826"},
+                {"name": "HB20", "code": "5853"},
+                {"name": "HB20S", "code": "5854"},
+                {"name": "Tucson", "code": "1344"},
+                {"name": "Azera", "code": "5726"}
+            ]
+        },
+        {
+            "name": "Toyota",
+            "code": "56",
+            "models": [
+                {"name": "Hilux", "code": "2238"}
+            ]
+        }
+    ]
+}

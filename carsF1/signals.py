@@ -20,13 +20,13 @@ def car_inventory_update():
             cars_value=total_value
         )
 
-@receiver(pre_save, sender=Car)
-def car_pre_save(sender, instance, **kwargs):
-    # Se o carro é novo (ainda não tem um ID) e a bio está em branco...
-    if instance.pk is None and not instance.bio:
-        print(f"Gerando bio para o carro: {instance.model, instance.brand, instance.model_year}") # Log para depuração
-        # ...chama nosso serviço para gerar a bio.
-        instance.bio = gemini_service.generate_car_bio(instance)
+# @receiver(pre_save, sender=Car)
+# def car_pre_save(sender, instance, **kwargs):
+#     # Se o carro é novo (ainda não tem um ID) e a bio está em branco...
+#     if instance.pk is None and not instance.bio:
+#         print(f"Gerando bio para o carro: {instance.model, instance.brand, instance.model_year}") # Log para depuração
+#         # ...chama nosso serviço para gerar a bio.
+#         instance.bio = gemini_service.generate_car_bio(instance)
      
 @receiver(post_save, sender=Car)
 def car_post_save(sender, instance, **kwargs):

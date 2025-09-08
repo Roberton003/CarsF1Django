@@ -23,11 +23,13 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 GEMINI_API_KEY = env('GEMINI_API_KEY', default='CHAVE_NAO_ENCONTRADA')
 
 
+FIPE_API_KEY = env('FIPE_API_KEY', default='CHAVE_NAO_ENCONTRADA')
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-xo2#1v%m0j@jgfo(7g9w#a$+g=25^x9v8+30x7$!f*o1pmqd!$'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -83,8 +85,12 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': env('DB_HOST'),
+        'PORT': env('DB_PORT'),
     }
 }
 

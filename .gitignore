@@ -52,60 +52,6 @@ htmlcov/
 # Django stuff:
 *.log
 local_settings.py
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-.pytest_cache/
-.hypothesis/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
 db.sqlite3
 db.sqlite3-journal
 media/
@@ -126,18 +72,7 @@ ENV/
 
 # Project-specific ignores
 /posts/
+/scraper_test/
 
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-
-# IDE settings
-.vscode/
-.idea/
-
-# OS-specific
-.DS_Store
+# Generated scraper data
+_generated_scraper_data/
